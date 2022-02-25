@@ -1,7 +1,17 @@
 {
   "name": "arabic-stem",
-  "private": true,
   "version": "0.0.1",
+  "license": "ICS",
+  "keywords": [
+    "arabic-stemmer",
+    "arabic-stem",
+    "arabic",
+    "language"
+  ],
+  "homepage": "https://github.com/dwekat/arabic-stem",
+  "bugs": {
+    "url": "https://github.com/dwekat/arabic-stem/issues"
+  },
   "files": [
     "dist"
   ],
