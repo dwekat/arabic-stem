@@ -1,15 +1,15 @@
 {
-  "name": "arabic-stemmer",
+  "name": "arabic-stem",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "files": [
     "dist"
   ],
-  "main": "./dist/arabic-stemmer.umd.js",
+  "main": "./dist/arabic-stem.umd.js",
   "exports": {
     ".": {
-      "import": "./dist/arabic-stemmer.es.js",
-      "require": "./dist/arabic-stemmer.umd.js"
+      "import": "./dist/arabic-stem.es.js",
+      "require": "./dist/arabic-stem.umd.js"
     }
   },
   "scripts": {
