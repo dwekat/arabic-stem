@@ -17,6 +17,8 @@
     "noImplicitReturns": true
   },
   "include": [
-    "src"
+    "src",
+    "commitlint.config.js",
+    "vite.config.js"
   ]
 }
