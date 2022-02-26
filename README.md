@@ -1,6 +1,6 @@
 # Arabic word stemmer
 
-This is a simple word stemmer for arabic languages, inspired by [arabic-stemmer](https://www.npmjs.com/package/arabic-stemmer).
+This is `0` dependency, simple word stemmer for arabic languages, inspired by [arabic-stemmer](https://www.npmjs.com/package/arabic-stemmer).
 This package supports `commonJs` as well as `ES` modules.
 
 ## Installation
