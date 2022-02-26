@@ -1,7 +1,7 @@
 /**
  *
  */
-import Stemmer from './main';
+import Stemmer from './index';
 
 describe('Stemmer', () => {
   let stemmer: Stemmer;
