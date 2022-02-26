@@ -1,9 +1,11 @@
 # Arabic word stemmer
 
-This is `0` dependency, simple word stemmer for arabic languages, inspired by [arabic-stemmer](https://www.npmjs.com/package/arabic-stemmer).
-This package supports `commonJs` as well as `ES` modules.
+This is `0` dependency, simple word stemmer for arabic languages, inspired
+by [arabic-stemmer](https://www.npmjs.com/package/arabic-stemmer). This package supports `commonJs` as well as `ES`
+modules.
 
 ## Installation
+
 First install the package with npm
 
 ```shell
@@ -45,3 +47,18 @@ console.log(stemmer.stem('المولودين'));
     (both share a common stem 'ولد')
 */
 ```
+
+## Contribution
+
+commit message format
+
+```text
+type(scope?): subject
+```
+
+scope is optional; multiple scopes are supported (current delimiter options: "/", "\" and ",")
+
+### Commit Types
+
+`build` `chore` `ci` `docs` `feat` `fix` `perf` `refactor`
+`revert` `style` `test`
