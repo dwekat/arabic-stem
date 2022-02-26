@@ -222,7 +222,7 @@ export default class Stemmer {
    * @return {any[]}
    */
   getMatchesForPatterns(token: string, patterns: RegExp[]) {
-    const matches = [];
+    const matches: string[] = [];
     for (const pat of patterns) {
       let match;
       if ((match = pat.exec(token))) {
