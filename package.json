@@ -1,6 +1,6 @@
 {
   "name": "arabic-stem",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "license": "ICS",
   "keywords": [
     "arabic-stemmer",
@@ -15,16 +15,10 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.js",
+  "main": "dist/index.umd.min.js",
   "module": "dist/index.min.mjs",
   "unpkg": "dist/index.umd.min.js",
   "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.min.mjs",
-      "require": "./dist/index.umd.js"
-    }
-  },
   "scripts": {
     "prebuild": "npm run lint && run-p test clean",
     "clean": "rimraf dist",
