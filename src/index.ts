@@ -162,7 +162,9 @@ export default class Stemmer {
     matches = matches.map((m) => this.postNormalize(m));
 
     matches = matches.reduce<string[]>((res, current) => {
-      !res.includes(current) && res.push(current);
+      if (!res.includes(current)) {
+        res.push(current);
+      }
       return res;
     }, []);
 
