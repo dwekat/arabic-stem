@@ -4,6 +4,8 @@ This is `0` dependency, simple word stemmer for arabic languages, inspired
 by [arabic-stemmer](https://www.npmjs.com/package/arabic-stemmer). This package supports `commonJs` as well as `ES`
 modules.
 
+<a href="https://www.buymeacoffee.com/dwekat" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="217"></a>
+
 ## Installation
 
 First install the package with npm
@@ -15,7 +17,7 @@ npm install arabic-stem
 ## Usage
 
 ```javascript
-import Stemmer from 'arabic-stem'
+import Stemmer from 'arabic-stem';
 
 const stemmer = new Stemmer();
 
