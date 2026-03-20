@@ -21,11 +21,12 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noImplicitAny": false,
-    "declaration": true
+    "declaration": true,
+    "types": ["vitest/globals"]
   },
   "include": [
     "src",
     "commitlint.config.js",
-    "vite.config.js"
+    "vitest.config.ts"
   ]
 }
