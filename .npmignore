@@ -3,3 +3,4 @@
 **/tsconfig.es.json
 node_modules
 src
+coverage
