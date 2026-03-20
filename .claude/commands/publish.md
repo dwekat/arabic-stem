@@ -15,7 +15,8 @@ Release arabic-stem as a $ARGUMENTS version bump.
 3. Verify npm auth: `npm whoami`
 4. Create changeset: `npm run changeset` — select "$ARGUMENTS" as the bump type
 5. Version bump: `npm run version`
-6. Commit version changes: `git add -A && git commit -m "chore: release v$(node -p "require('./package.json').version")"`
+6. Sync lockfile: `npm i` (changeset version does not update package-lock.json)
+7. Commit version changes: `git add -A && git commit -m "chore: release v$(node -p "require('./package.json').version")"`
 7. Push: `git push origin main --tags`
 8. Build and publish: `npm run release`
 9. Create GitHub release:
