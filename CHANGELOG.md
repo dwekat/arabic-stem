@@ -1,5 +1,11 @@
 # arabic-stem
 
+## 0.0.11
+
+### Patch Changes
+
+- Fix missing فكال prefix in 4-char prefix list
+
 ## 0.0.10
 
 ### Patch Changes
