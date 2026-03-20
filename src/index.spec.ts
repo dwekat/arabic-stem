@@ -356,6 +356,12 @@ describe('Stemmer', () => {
       expect(r.normalized).toBe('دول');
     });
 
+    it('4-char prefix فكال: فكالعادة strips prefix correctly', () => {
+      const r = stemmer.stem('فكالعادة');
+      const bare = stemmer.stem('عادة');
+      expect(r.normalized).toBe(bare.normalized);
+    });
+
     it('1-char prefix ي: يكتب stripped before matching', () => {
       const r = stemmer.stem('يكتب');
       expect(r.stem).not.toHaveLength(0);

@@ -45,6 +45,11 @@ describe('AffixCleaner', () => {
       expect(ac.getPrefix(4)).toBe('وكال');
     });
 
+    it('returns 4-char prefix "فكال" when token starts with it', () => {
+      const ac = new AffixCleaner('فكالدولة');
+      expect(ac.getPrefix(4)).toBe('فكال');
+    });
+
     it('returns empty string when no matching prefix', () => {
       const ac = new AffixCleaner('كتاب');
       expect(ac.getPrefix(2)).toBe('');
