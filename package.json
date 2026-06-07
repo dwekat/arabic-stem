@@ -36,7 +36,7 @@
     "test:cov": "vitest run --coverage",
     "prepare": "is-ci || husky",
     "changeset": "changeset",
-    "version": "changeset version",
+    "version": "changeset version && npm install --package-lock-only",
     "release": "npm run build && changeset publish"
   },
   "devDependencies": {

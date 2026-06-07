@@ -14,10 +14,9 @@ Release arabic-stem as a $ARGUMENTS version bump. Publishing is handled by the
 1. Verify clean git state: `git status` must show no uncommitted changes
 2. Verify tests pass: `npm test`
 3. Create changeset: `npm run changeset` — select "$ARGUMENTS" as the bump type
-4. Version bump: `npm run version`
-5. Sync lockfile: `npm i` (changeset version does not update package-lock.json)
-6. Commit version changes: `git add -A && git commit -m "chore: release v$(node -p "require('./package.json').version")"`
-7. Tag the release: `git tag "v$(node -p "require('./package.json').version")"`
-8. Push commit and tag: `git push origin main --follow-tags`
-9. CI publishes to npm and creates the GitHub release. Report the run URL:
+4. Version bump: `npm run version` (bumps package.json, writes CHANGELOG, syncs lockfile)
+5. Commit version changes: `git add -A && git commit -m "chore: release v$(node -p "require('./package.json').version")"`
+6. Tag the release: `git tag "v$(node -p "require('./package.json').version")"`
+7. Push commit and tag: `git push origin main --follow-tags`
+8. CI publishes to npm and creates the GitHub release. Report the run URL:
    `gh run list --workflow=release.yml --limit=1`
