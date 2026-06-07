@@ -1,5 +1,13 @@
 # arabic-stem
 
+## 0.0.12
+
+### Patch Changes
+
+- Maintenance release: bump dev dependencies (commitlint 21, eslint,
+  typescript-eslint, globals, rollup, terser, vitest, prettier) and add a
+  tag-triggered GitHub Actions workflow that publishes to npm with provenance.
+
 ## 0.0.11
 
 ### Patch Changes
