@@ -50,7 +50,15 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+      - name: Extract changelog for this version
+        run: |
+          set -euo pipefail
+          awk -v v="## ${{ steps.version.outputs.version }}" \
+            '$0==v{f=1;next} /^## /&&f{exit} f{print}' CHANGELOG.md > RELEASE_NOTES.md
+          cat RELEASE_NOTES.md
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          generate_release_notes: true
+          body_path: RELEASE_NOTES.md # changeset changelog section for this version
+          generate_release_notes: true # appends GitHub's commit/PR list below
