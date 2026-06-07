@@ -12,6 +12,10 @@
   "bugs": {
     "url": "https://github.com/dwekat/arabic-stem/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwekat/arabic-stem.git"
+  },
   "files": [
     "dist"
   ],
