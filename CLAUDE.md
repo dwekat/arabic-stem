@@ -36,7 +36,10 @@ The stemmer is two classes:
 
 ## Release Workflow
 
-Uses `@changesets/cli`. Run `/publish patch|minor|major` or manually: `npm run changeset` → `npm run version` → `npm run release`.
+Uses `@changesets/cli`. Run `/publish patch|minor|major` to bump, tag, and push.
+The `Release` GitHub Actions workflow (`.github/workflows/release.yml`) fires on the
+`v*` tag and publishes to npm with provenance, then creates the GitHub release.
+Manual local publish (`npm run release`) is still available as a fallback.
 
 ## Development Process
 
