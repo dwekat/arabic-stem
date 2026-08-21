@@ -1,5 +1,11 @@
 # arabic-stem
 
+## 0.0.13
+
+### Patch Changes
+
+- Dependency maintenance: refresh dev toolchain and clear open security advisories.
+
 ## 0.0.12
 
 ### Patch Changes
