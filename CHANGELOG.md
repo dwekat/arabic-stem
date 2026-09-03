@@ -1,5 +1,11 @@
 # arabic-stem
 
+## 0.0.14
+
+### Patch Changes
+
+- Update build and lint toolchain (rollup, terser, eslint, @typescript-eslint, globals). Rebuilds the published bundle; no source or public API change.
+
 ## 0.0.13
 
 ### Patch Changes
