@@ -1,5 +1,11 @@
 # arabic-stem
 
+## 0.0.16
+
+### Patch Changes
+
+- Update maintenance dependencies and migrate npm publishing to trusted publishing.
+
 ## 0.0.14
 
 ### Patch Changes
